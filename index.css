@@ -1,0 +1,158 @@
+#headline {
+    text-align: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20%;
+    padding-left: 33%;
+    display: inline-block;
+    font: monospace;
+    overflow: hidden;
+    white-space: nowrap;
+}
+#headline span {
+    display: inline-block;
+    overflow: hidden;
+    max-width: 0;
+    animation: typing 2s steps(40, end) forwards;
+    border-right: 2px solid white;
+}
+@keyframes typing {
+    from {max-width: 0%;}
+    to {max-width: 100%;}
+}
+@keyframes blink {
+    50% {border-color: transparent;}
+}
+#subheadline {
+    text-align: center;
+    /* padding-left: 33%; */
+}
+body{
+    height: 200vh;
+}
+@keyframes appear{
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+section {
+    animation: appear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+    animation-delay: 3s;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+
+#hero{
+    background-color: #2D1B4A ;
+    color: #D1B3FF;
+    font-family: 'Georgia', serif;
+}
+#aboutme {
+    background-color: #FFB82D;
+    color: black;
+    font-family: 'Arial', serif;
+}
+* {
+    margin:0;
+    padding:0;
+}
+.topnav {
+    background-color: #2D1B4A;
+    overflow: hidden;
+    color: #2D1B4A;
+}
+.box {
+    display: inline-block;
+    position: absolute;
+    left: 60%;
+    top: 40%;
+    right: 10%;
+    border-radius: 10px;
+}
+#contact {
+    background-color: #1A102B;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav a {
+    float: left;
+    color: white;
+    padding: 14px 16px;
+}
+.topnav a:hover {
+    color: blue;
+}
+.topnav a:active {
+    color: red
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #1A102B;
+    padding: 10px;
+  }
+  
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+#submitt {
+    border-radius: 10px;
+}
+.column form input, .column form textarea {
+    border: transparent;
+    border-radius: 7px;
+}
+#submitt:hover {
+    background-color: #4CAF50;
+    color: white;
+}
